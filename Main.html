@@ -1,66 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <head>
-    <meta charset="UTF-8">
-     <link rel = "stylesheet"
-      type = "text/css"
-       href = "surveyPage.css" />
-    <title>Survey Page</title>
+
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<link href="surveyPage.css" rel="stylesheet" type="text/css">
+	<title>Survey Page</title>
 </head>
 <body>
-    <h1 class="text-center"><b>Survey Page</b></h1>
-    <p class="text-center">Welcome to the Ski and Snowboard Club Survey. <br>Please tell us a little about yourself!</p>
-    <form id ="surveyForm" class="form-horizontal">
-        <div class = "container jumbotron">
-            <div id="inputFields">
-                <div id=name>
-                    <label for="name">Name: </label>
-                    <input type="text" id="nameInput" class="input-field" required placeholder="Enter Your Name"  >
-                </div>
-                <div id=email>
-                    <label for="name">Email: </label>
-                    <input type="email" id="emailInput" class="input-field" required placeholder="Enter Your Email" >
-                </div>
-                 <div id=age>
-                    <label for="name">Age: </label>
-                    <input type="number" id="ageInput" min=0 max=150 class="input-field" placeholder="Age" >
-                </div>
-                 <div id=grade>
-                     <label for="name">Grade: </label>
-                      <select name="gradeDDL">
-                          <option value="freshmen">Freshmen</option>
-                          <option value="sophmore">Sophmore</option>
-                          <option value="junior">Junior</option>
-                          <option value="senior">Senior</option>
-                    </select>
-                </div>
-                 <div id=skiRG>
-                     <label for="name">Craft: </label>
-                    <input type="radio" id="skiRadio" class="input-field radio-inline" >Ski
-                    <input type="radio" id="snowboardRadio" class="input-field radio-inline" >Snowboard
-                    <input type="radio" id="snowboardRadio" class="input-field radio-inline" >Both
-                </div>
-               
-                 <div id=activities>
-                    <label for="name">Activities: </label>
-                    <input type="checkbox" class="input-field checkbox-inline" > Glades
-                    <input type="checkbox" class="input-field checkbox-inline" > Terrain Park
-                    <input type="checkbox" class="input-field checkbox-inline" > Casual 
-                    
-                </div>
-                
-                <div id="aboutText"></div>
-                     <label for="name">About: </label>
-                    <textarea name="message" rows="10" cols="30"> Type why you enjoy skiing/snowboarding here? </textarea>
-                </div>
-            </div>
-            <div>
-               <input type="submit" id="submitButton">
-            </div>
-        </div>
-    </form>
+	<h1 class="text-center"><b>Survey Page</b></h1>
+	<p class="text-center">Welcome to the Ski and Snowboard Club Survey.<br>
+	Please tell us a little about yourself!</p>
+	<form class="form-horizontal" id="surveyForm" name="surveyForm">
+		<div class="container jumbotron">
+			<div id="inputFields">
+				<div id="name">
+					<label>Name:</label> <input class="input-field" id="nameInput" placeholder="Enter Your Name" required="" type="text">
+				</div>
+				<div id="email">
+					<label>Email:</label> <input class="input-field" id="emailInput" placeholder="Enter Your Email" required="" type="email">
+				</div>
+				<div id="age">
+					<label>Age:</label> <input class="input-field" id="ageInput" max="150" min="0" placeholder="Age" type="number">
+				</div>
+				<div id="grade">
+					<label>Grade:</label> <select name="gradeDDL">
+						<option value="freshmen">
+							Freshmen
+						</option>
+						<option value="sophmore">
+							Sophmore
+						</option>
+						<option value="junior">
+							Junior
+						</option>
+						<option value="senior">
+							Senior
+						</option>
+					</select>
+				</div>
+				<div id="skiRG">
+					<label>Craft:</label> <input class="input-field radio-inline" id="skiRadio" type="radio">Ski <input class="input-field radio-inline" id="snowboardRadio" type="radio">Snowboard <input class="input-field radio-inline" id="bothRadio" type="radio">Both
+				</div>
+				<div id="activities">
+					<label>Activities:</label> <input class="input-field checkbox-inline" type="checkbox"> Glades <input class="input-field checkbox-inline" type="checkbox"> Terrain Park <input class="input-field checkbox-inline" type="checkbox"> Casual
+				</div>
+				<div id="aboutText"></div><label>About:</label> 
+				<textarea cols="30" name="message" rows="10">Type why you enjoy skiing/snowboarding here?</textarea>
+			</div>
+		</div>
+		<div>
+			<input id="submitButton" type="submit">
+		</div>
+	</form>
 </body>
 </html>
