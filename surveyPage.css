@@ -1,0 +1,25 @@
+body{
+    background-color: #FFE4C4;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+    
+}
+
+#rentalCheckbox{
+   display:block;
+   text-align: justify;
+}
+
+#inputFields{
+   padding: 10px;
+}
+#submitButton{
+    text-align: center;
+}
