@@ -21,5 +21,8 @@ label {
    padding: 10px;
 }
 #submitButton{
+    width:100px;
     text-align: center;
+    margin:auto;
+    margin-bottom: 50px;
 }
